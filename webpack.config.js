@@ -15,7 +15,6 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
-      // { from: './app/styles/style.css', to: 'style.css' },
       { from: './loading.gif', to: 'img/loading.gif' },
       { from: './bg.png', to: 'img/bg.png' },
       { from: './favicon.ico', to: 'favicon.ico' },
