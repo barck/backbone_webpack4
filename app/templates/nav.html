@@ -1,0 +1,9 @@
+<ul class="navbar">
+    <% for(var link in links) { %>    
+        <li class="navbar-link  
+            <% if( routeUrl == links[link].url || (routeUrl == 'index' && links[link].url == '')) { %> active <% } %>" 
+            data-url="<%= links[link].url%>">
+            <%= links[link].title %>
+        </li>                            
+    <% } %>
+</ul>

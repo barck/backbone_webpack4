@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&subset=cyrillic');
+body
+    margin: 0;
+    padding: 0;
+    background: #fff url("/img/bg.png") fixed;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: #373737;
+
+
+p, h2,h3
+    margin: 0;
+    padding: 5px;
+
+
+.nav
+    background: #ffab48;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.62);
+
+
+.loading
+    background-image: url("/img/loading.gif");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    min-height: 600px;
+
+
+.container
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+
+.navbar
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 24px;
+    font-size: 0;
+    li
+        display: inline-block;
+        padding:  30px;
+        border-right: 1px solid #ef9225;
+        font-weight: 400;
+        cursor: pointer;
+        font-size: 22px;
+        color: #fff;
+        &:hover
+            background: #ffba69;
+
+
+.routerUrl
+    background: #ffca8b;
+    &:hover
+        background: #ffca8b!important;
+
+
+.navbar li.active
+    background: #ff9313;
+
+
+.list-item
+    margin-top: 20px;
+    background: #ebf4ff;
+
+
+.posts, .photos, .users
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    flex-wrap: wrap;
+    @media(max-width: 1000px)
+        width: 45%;
+
+.post, .photo 
+    box-sizing: border-box;
+    width: 30%;
+    position: relative;
+    border: 2px solid #ff8d00;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-top: 40px;
+    list-style: none;
+    background: #ffb4396e;
+    box-shadow: 0 0 10px rgb(255, 165, 0);
+    cursor: pointer;
+
+
+.user
+    box-sizing: border-box;
+    width: 45%;
+    position: relative;
+    border: 2px solid #ff8d00;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    list-style: none;
+    background: #ffb4396e;
+    box-shadow: 0 0 10px rgb(255, 165, 0);
+    cursor: pointer;
+
+
+.bottom-flex
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    flex-wrap: wrap;
+    background: #ffca76;
+
+.post:hover, .photo:hover
+    box-shadow: 0 0 20px rgb(255, 165, 0);
+    background: #ffa615b0;
+    border-color: #ff6b03;
+
+
+.post .post-id, .photo .post-id
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+.post:hover .post-id, .photo:hover .photo-id
+    font-size: 150%;
+
+img
+    float: right;
+
+.photos img
+    width: 100px;
+    height: 100px;
